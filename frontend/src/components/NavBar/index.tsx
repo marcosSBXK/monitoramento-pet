@@ -2,28 +2,24 @@ import ImgVet from 'assets/img/imgvet.png';
 
 function NavBar() {
     return (
-        <header className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <header className="bg-white">
             <div className="container">
-                <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                    <nav className="my-2 my-md-0 mr-md-3">
+                <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
+                    <div className="d-flex align-items-center col-md-3 mb-2 mb-md-0">
                         <img src={ImgVet} alt="BichanosVet" width="200" />
-                    </nav>
-                    <a href="/" className="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                        <svg className="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlinkHref="/bootstrap" /></svg>
-                    </a>
+                    </div>
 
-
-                    <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                        <li><a href="/" className="isDisabled nav-link px-2 text-secondary">Home</a></li>
-                        <li><a href="/" className="isDisabled nav-link px-2 text-white">Features</a></li>
-                        <li><a href="/" className="isDisabled nav-link px-2 text-white">Pricing</a></li>
-                        <li><a href="/" className="isDisabled nav-link px-2 text-white">FAQs</a></li>
-                        <li><a href="/" className="isDisabled nav-link px-2 text-white">About</a></li>
+                    <ul className="nav justify-content-center mb-md-0 text-dark">
+                        <li><a href="/" className="isDisabled nav-link px-2">Home</a></li>
+                        <li><a href="/" className="isDisabled nav-link px-2">Features</a></li>
+                        <li><a href="/" className="isDisabled nav-link px-2">Pricing</a></li>
+                        <li><a href="/" className="isDisabled nav-link px-2">FAQs</a></li>
+                        <li><a href="/" className="isDisabled nav-link px-2">About</a></li>
                     </ul>
 
-                    <div className="text-end">
-                        <button type="button" className="btn btn-outline-light me-2">Login</button>
-                        <button type="button" className="btn btn-warning">Sign-up</button>
+                    <div className="col-md-3 text-end">
+                        <button type="button" className="btn btn-outline-dark me-2">Fazer Login</button>
+                        <button type="button" className="btn btn-primary">Cadastre-se</button>
                     </div>
                 </div>
             </div>
