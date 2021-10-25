@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 :root {
-    --color-primary: #FF8400;
+    --color-primary: #FECA7D;
+    --color-secondary: #FCEDB8;
+    --color-light1: #F1F5F4;
+    --color-light2:#FFFFFF;
+    --color-gray: #A0A0A0;
 }
 
 html, body {
@@ -37,8 +41,6 @@ html, body {
     opacity: 0.5;
     text-decoration: none;
   }
-
-  
 
 /*
  * Cover
