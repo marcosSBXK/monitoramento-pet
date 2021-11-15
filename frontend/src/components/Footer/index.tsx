@@ -1,18 +1,17 @@
 function Footer() {
     return (
-        <footer className="footer mt-auto bg-light">
+        <footer className="footer">
             <div className="container">
-                <ul className="nav justify-content-center border-bottom pb-3 mb-3">
-                    <li className="nav-item"><a href="/" className="isDisabled nav-link px-2 text-dark">Home</a></li>
-                    <li className="nav-item"><a href="/" className="isDisabled nav-link px-2 text-dark">Features</a></li>
-                    <li className="nav-item"><a href="/" className="isDisabled nav-link px-2 text-dark">Pricing</a></li>
-                    <li className="nav-item"><a href="/" className="isDisabled nav-link px-2 text-dark">FAQs</a></li>
-                    <li className="nav-item"><a href="/" className="isDisabled nav-link px-2 text-dark">About</a></li>
-                </ul>
-                <p className="text-center text-dark">&copy; 2021 Company, Inc</p>
+                <div className="copyright">
+                    &copy; Copyright <strong><span>BichanoVet</span></strong>
+                </div>
+                <div className="credits">
+                    Designed by <a href="/">BichanoVet</a>
+                </div>
             </div>
         </footer>
     );
 }
 
 export default Footer;
+

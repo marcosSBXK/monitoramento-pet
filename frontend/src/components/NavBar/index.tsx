@@ -1,27 +1,34 @@
-import ImgVet from 'assets/img/imgvet.png';
+
 
 function NavBar() {
     return (
-        <header className="bg-white">
-            <div className="container">
-                <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
-                    <div className="d-flex align-items-center col-md-3 mb-2 mb-md-0">
-                        <img src={ImgVet} alt="BichanosVet" width="200" />
-                    </div>
+        <header id="header">
+            <div className="d-flex flex-column">
 
-                    <ul className="nav justify-content-center mb-md-0 text-dark">
-                        <li><a href="/" className="isDisabled nav-link px-2">Home</a></li>
-                        <li><a href="/" className="isDisabled nav-link px-2">Features</a></li>
-                        <li><a href="/" className="isDisabled nav-link px-2">Pricing</a></li>
-                        <li><a href="/" className="isDisabled nav-link px-2">FAQs</a></li>
-                        <li><a href="/" className="isDisabled nav-link px-2">About</a></li>
-                    </ul>
-
-                    <div className="col-md-3 text-end">
-                        <button type="button" className="btn btn-outline-dark me-2">Fazer Login</button>
-                        <button type="button" className="btn btn-primary">Cadastre-se</button>
+                <div className="profile">
+                    <img src="assets/img/Espaço-Pet-no-condomínio.jpg" alt="" className="img-fluid rounded-circle" />
+                    <h1 className="text-light"><a href="index.html">BichanoVet</a></h1>
+                    <div className="social-links mt-3 text-center">
+                        <a href="/" className="twitter"><i className="bx bxl-twitter"></i></a>
+                        <a href="/" className="facebook"><i className="bx bxl-facebook"></i></a>
+                        <a href="/" className="instagram"><i className="bx bxl-instagram"></i></a>
+                        <a href="/" className="google-plus"><i className="bx bxl-skype"></i></a>
+                        <a href="/" className="linkedin"><i className="bx bxl-linkedin"></i></a>
                     </div>
                 </div>
+
+                <nav className="nav-menu">
+                    <ul>
+                        <li className="active"><a href="index.html"><i className="bx bx-home"></i> <span>Incio</span></a></li>
+                        <li><a href="#about"><i className="bx bx-user"></i> <span>Sobre</span></a></li>
+                        <li><a href="#resume"><i className="bx bx-file-blank"></i> <span>Resumo</span></a></li>
+                        <li><a href="#portfolio"><i className="bx bx-book-content"></i> Area do Cliente</a></li>
+                        <li><a href="#services"><i className="bx bx-server"></i> Serviços</a></li>
+                        <li><a href="#contact"><i className="bx bx-envelope"></i> Contato</a></li>
+
+                    </ul>
+                </nav>
+                <button type="button" className="mobile-nav-toggle d-xl-none"><i className="icofont-navigation-menu"></i></button>
             </div>
         </header>
     );
