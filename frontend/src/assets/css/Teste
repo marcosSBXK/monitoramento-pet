@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   background: #149ddd;
-  color: #FECA7D;
+  color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
 }
@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  color: #FECA7D;
+  color: #fff;
   background: #2eafec;
   transition: background 0.2s ease-in-out;
 }
@@ -59,9 +59,8 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #FECA7D;
+  background: #040b14;
   overflow-y: auto;
-  box-shadow: 5px 5px 2em #888;;
 }
 
 #header .profile img {
@@ -82,15 +81,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .profile h1 a, #header .profile h1 a:hover {
-  color: #212431;
+  color: #fff;
   text-decoration: none;
 }
 
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
-  background:#f1da9b;
-  color:  #212431;
+  background: #212431;
+  color: #fff;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -103,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .profile .social-links a:hover {
   background: #149ddd;
-  color: #212431;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -157,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   text-decoration: none;
-  color: #212431;
+  color: #fff;
 }
 
 .nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
@@ -202,14 +201,14 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/Ropuinhas_pug.png") top center;
+  background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
 }
 
 #hero:before {
   content: "";
-  background: rgba(5,13,24,0.3);
-position: absolute;
+  background: rgba(5, 13, 24, 0.3);
+  position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
@@ -239,7 +238,7 @@ position: absolute;
 }
 
 #hero p span {
-  color:#fff;
+  color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
@@ -272,7 +271,7 @@ section {
 }
 
 .section-bg {
-  background: #FECA7D;
+  background: #f5f8fd;
 }
 
 .section-title {
@@ -355,7 +354,7 @@ section {
   line-height: 40px;
   display: block;
   font-weight: 700;
-  color: #FECA7D;
+  color: #050d18;
   margin-left: 60px;
 }
 
@@ -473,7 +472,7 @@ section {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background:#FECA7D;
+  background: #fff;
   border: 2px solid #1f5297;
 }
 
@@ -489,7 +488,7 @@ section {
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
-  background:#FECA7D;
+  background: #fff;
   border-radius: 50px;
   padding: 2px 15px;
 }

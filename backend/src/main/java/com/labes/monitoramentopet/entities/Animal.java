@@ -2,64 +2,77 @@ package com.labes.monitoramentopet.entities;
 
 import java.time.LocalDate;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "tb_animal")
 public class Animal {
 	
-	private Long id;
-	private String nomeCliente;
-	private String nomeAnimal;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long idAnimal;
+	private String clientes;
+	private String name;
 	private String especie;
-	private LocalDate dataNascimento;
+	private LocalDate nascimento;
 	private String raca;
-	private Double peso;
-	private Double tamanho;
-	private Boolean vacinado;
-	private LocalDate dataRegistro;
-	private Boolean castrado;
+	private String peso;
+	private String vacinado;
+	private LocalDate registro;
+	private String castrado;
 	
+	@ManyToOne // muitos para um, chave estrangeira 
+	@JoinColumn(name = "cliente_id")
 	private Cliente cliente;
-	private Animal animail;
 	
 	public Animal() {
 	}
 
-	public Animal(Long id, String nomeCliente, String nomeAnimal, String especie, LocalDate dataNascimento, String raca,
-			Double peso, Double tamanho, Boolean vacinado, LocalDate dataRegistro, Boolean castrado, Cliente cliente) {
-		this.id = id;
-		this.nomeCliente = nomeCliente;
-		this.nomeAnimal = nomeAnimal;
+	public Animal(Long idAnimal, String clientes, String name, String especie, LocalDate nascimento, String raca,
+			String peso, Double tamanho, String vacinado, LocalDate registro, String castrado, Cliente cliente) {
+		this.idAnimal = idAnimal;
+		this.clientes = clientes;
+		this.name = name;
 		this.especie = especie;
-		this.dataNascimento = dataNascimento;
+		this.nascimento = nascimento;
 		this.raca = raca;
 		this.peso = peso;
-		this.tamanho = tamanho;
 		this.vacinado = vacinado;
-		this.dataRegistro = dataRegistro;
+		this.registro = registro;
 		this.castrado = castrado;
 		this.cliente = cliente;
 	}
 
-	public Long getId() {
-		return id;
+
+
+	public Long getIdAnimal() {
+		return idAnimal;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
+	public void setIdAnimal(Long idAnimal) {
+		this.idAnimal = idAnimal;
 	}
 
-	public String getNomeCliente() {
-		return nomeCliente;
+	public String getClientes() {
+		return clientes;
 	}
 
-	public void setNomeCliente(String nomeCliente) {
-		this.nomeCliente = nomeCliente;
+	public void setClientes(String clientes) {
+		this.clientes = clientes;
 	}
 
-	public String getNomeAnimal() {
-		return nomeAnimal;
+	public String getName() {
+		return name;
 	}
 
-	public void setNomeAnimal(String nomeAnimal) {
-		this.nomeAnimal = nomeAnimal;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getEspecie() {
@@ -70,12 +83,12 @@ public class Animal {
 		this.especie = especie;
 	}
 
-	public LocalDate getDataNascimento() {
-		return dataNascimento;
+	public LocalDate getNascimento() {
+		return nascimento;
 	}
 
-	public void setDataNascimento(LocalDate dataNascimento) {
-		this.dataNascimento = dataNascimento;
+	public void setNascimento(LocalDate nascimento) {
+		this.nascimento = nascimento;
 	}
 
 	public String getRaca() {
@@ -86,43 +99,35 @@ public class Animal {
 		this.raca = raca;
 	}
 
-	public Double getPeso() {
+	public String getPeso() {
 		return peso;
 	}
 
-	public void setPeso(Double peso) {
+	public void setPeso(String peso) {
 		this.peso = peso;
 	}
 
-	public Double getTamanho() {
-		return tamanho;
-	}
-
-	public void setTamanho(Double tamanho) {
-		this.tamanho = tamanho;
-	}
-
-	public Boolean getVacinado() {
+	public String getVacinado() {
 		return vacinado;
 	}
 
-	public void setVacinado(Boolean vacinado) {
+	public void setVacinado(String vacinado) {
 		this.vacinado = vacinado;
 	}
 
-	public LocalDate getDataRegistro() {
-		return dataRegistro;
+	public LocalDate getRegistro() {
+		return registro;
 	}
 
-	public void setDataRegistro(LocalDate dataRegistro) {
-		this.dataRegistro = dataRegistro;
+	public void setRegistro(LocalDate registro) {
+		this.registro = registro;
 	}
 
-	public Boolean getCastrado() {
+	public String getCastrado() {
 		return castrado;
 	}
 
-	public void setCastrado(Boolean castrado) {
+	public void setCastrado(String castrado) {
 		this.castrado = castrado;
 	}
 
@@ -134,11 +139,4 @@ public class Animal {
 		this.cliente = cliente;
 	}
 
-	public Animal getAnimail() {
-		return animail;
-	}
-
-	public void setAnimail(Animal animail) {
-		this.animail = animail;
-	}
 }
