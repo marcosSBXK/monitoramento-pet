@@ -6,4 +6,5 @@ import com.labes.monitoramentopet.entities.Alimentacao;
 
 public interface AlimentacaoRepository extends JpaRepository<Alimentacao, Long> {
 
+
 }
