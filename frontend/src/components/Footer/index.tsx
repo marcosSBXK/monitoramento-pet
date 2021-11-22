@@ -1,6 +1,9 @@
+import React from 'react';
+import 'assets/css/styles.css';
+
 function Footer() {
     return (
-        <footer className="footer">
+        <footer id="footer">
             <div className="container">
                 <div className="copyright">
                     &copy; Copyright <strong><span>BichanoVet</span></strong>
@@ -10,6 +13,8 @@ function Footer() {
                 </div>
             </div>
         </footer>
+
+
     );
 }
 
