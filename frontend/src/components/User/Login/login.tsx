@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import wave from "assets/img/wavee.png";
 import bg from "assets/img/bg.svg";
 import avatar from "assets/img/avatar.svg";
@@ -49,9 +48,9 @@ const UserLogin = () => {
                             </div>
                             
                         </div>
-                        <div className="forgot">
+                       
                             <a href='#'>Forgot Password?</a>
-                        </div>
+                       
                         <Link className="btn" type="submit" to={'/main'}>
                             Login
                         </Link>
