@@ -1,5 +1,3 @@
-/* eslint-disable import/first */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
 
 import wave from "assets/img/wavee.png";
@@ -9,24 +7,7 @@ import { Link } from "react-router-dom"
 import "assets/css/styles.css"
 
 
-
-function initialState() {
-    return { user: '', password: '' };
-}
-
 const UserLogin = () => {
-    const [values, setValues] = useState(initialState);
-
-    function onChange(event: { target: { value: any; name: any; }; }) {
-        const { value, name } = event.target;
-
-        setValues({
-            ...values,
-            [name]: value,
-        })
-    }
-
-
 
     return (
         <div>
