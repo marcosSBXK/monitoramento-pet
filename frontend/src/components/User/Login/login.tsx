@@ -2,7 +2,7 @@
 //import wave from "assets/img/wavee.png";
 //import bg from "assets/img/bg.svg";
 //import avatar from "assets/img/avatar.svg";
-import { Link, useHistory } from "react-router-dom"
+import { useHistory } from "react-router-dom"
 import { Button, Col, Input, message, Row, Form } from "antd";
 import { useAuth } from "context/AuthProvider/useAuth";
 import wave from "assets/img/wavee.png"
