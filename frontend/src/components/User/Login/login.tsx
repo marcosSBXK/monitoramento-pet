@@ -1,12 +1,30 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import wave from "assets/img/wavee.png";
+//import wave from "assets/img/wavee.png";
+//import bg from "assets/img/bg.svg";
+//import avatar from "assets/img/avatar.svg";
+import { useHistory } from "react-router-dom"
+import { Button, Col, Input, message, Row, Form } from "antd";
+import { useAuth } from "context/AuthProvider/useAuth";
+import wave from "assets/img/wavee.png"
 import bg from "assets/img/bg.svg";
 import avatar from "assets/img/avatar.svg";
-import { Link } from "react-router-dom"
 import "assets/css/styles.css"
 
 
-const UserLogin = () => {
+export const Login = () => {
+    const auth = useAuth();
+    const history = useHistory();
+
+    async function onFinish(values: { email: string, password: string }) {
+
+        try {
+            await auth.authenticate(values.email, values.password);
+
+            history.push("/main");
+        } catch (error) {
+            message.error('Invalid email or password');
+        }
+    }
 
     return (
         <div>
@@ -16,50 +34,61 @@ const UserLogin = () => {
                     <img src={bg} className="bg" alt=""></img>
                 </div>
                 <div className="login-content">
-                    <form action="index.html">
-                        <img src={avatar} className="avatar" alt="icon"></img>
-                        <h2 className="title">Welcome</h2>
-                        <div className="input-div one">
-                            <div className="i">
-                                <i className="fas fa-user"></i>
-                            </div>
-                            <div className="div">
-                                <h5>Username</h5>
-                                <input
 
-                                    type="text"
-                                    className="imput"
+                    <Row
+                        justify='center'
+                        align='middle'
+                        style={{
+                            height: '100vh'
+                        }}
+                    >
+                        <Col span={12}>
+                            <Form
+                                name='basic'
+                                labelCol={{ span: 8 }}
+                                wrapperCol={{ span: 16 }}
+                                onFinish={onFinish}
+                            >
 
-                                />
-                            </div>
-                        </div>
-                        <div className="input-div pass">
-                            <div className="i">
-                                <i className="fas fa-lock"></i>
-                            </div>
-                            <div className="div">
-                                <h5>Password</h5>
-                                <input
+                                <img src={avatar} className="avatar" alt="icon"></img>
+                                <Form
+                                    name="basic"
+                                    labelCol={{ span: 8 }}
+                                    wrapperCol={{ span: 16 }}
+                                    onFinish={onFinish}
+                                ></Form>
+                                <Form.Item
+                                    label='Email'
+                                    name='email'
+                                >
+                                    <Input />
+                                </Form.Item>
 
-                                    type="password"
-                                    className="password"
+                                <Form.Item
+                                    label='Password'
+                                    name='password'
+                                >
+                                    <Input.Password />
+                                </Form.Item>
+                                <Button
+                                    type="primary"
+                                    htmlType="submit"
 
-                                />
-                            </div>
-                            
-                        </div>
-                       
-                            <a href='#'>Forgot Password?</a>
-                       
-                        <Link className="btn" type="submit" to={'/main'}>
-                            Login
-                        </Link>
+                                    style={{ background: "#38d39f", borderColor: "#38d39f" }}
 
-                    </form>
+                                >
+                                    Login
+                                </Button>
+
+
+
+                            </Form>
+                        </Col>
+                    </Row>
                 </div>
             </div>
         </div>
     );
 };
-export default UserLogin;
+
 

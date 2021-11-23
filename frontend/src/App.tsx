@@ -1,9 +1,10 @@
-import Routes from "Routes";
-import 'assets/css/styles.css';
+//import React, { useState } from "react";
+import Routes from 'Routes';
+
 
 function App() {
   return (
-    <Routes />    
+    <Routes />
   );
 }
 

@@ -28,7 +28,7 @@ function NavBar() {
 
                     <nav className="nav-menu">
                         <ul>
-                            <li className="active"><a href="Home"><AiOutlineHome /><span>Início</span></a></li>
+                            <li className="active"><a href="main"><AiOutlineHome /><span>Início</span></a></li>
                             <li><a href="#about"><BsPeople /><span>Sobre</span></a></li>
                             <li><a href="#resume"><FiFile /><span>Resumo</span></a></li>
                             <li><a href="#portfolio"><BiBookContent />Area do Cliente</a></li>
