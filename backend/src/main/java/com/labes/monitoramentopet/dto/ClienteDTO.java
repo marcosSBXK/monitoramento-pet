@@ -70,6 +70,4 @@ public class ClienteDTO {
 	public void setPetshop(PetshopDTO petshop) {
 		this.petshop = petshop;
 	}
-
-	
 }
