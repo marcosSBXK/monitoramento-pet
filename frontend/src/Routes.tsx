@@ -8,6 +8,11 @@ import { Login } from "components/User/Login/login";
 import { AuthProvider } from "context/AuthProvider";
 import { ProtectedLayout } from "components/ProtectedLayout";
 
+
+
+
+
+
 const Routes = () => {
     return (
         <AuthProvider>
