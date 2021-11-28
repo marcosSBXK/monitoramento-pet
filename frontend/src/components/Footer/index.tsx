@@ -9,7 +9,7 @@ function Footer() {
                     &copy; Copyright <strong><span>BichanoVet</span></strong>
                 </div>
                 <div className="credits">
-                    Designed by <a href="https://github.com/SadraqueBezerra/monitoramento-pet">BichanoVet</a>
+                    Designed by <a href="https://github.com/marcosSBXK/monitoramento-pet">BichanoVet</a>
                 </div>
             </div>
         </footer>
@@ -19,4 +19,3 @@ function Footer() {
 }
 
 export default Footer;
-

@@ -7,7 +7,6 @@ import { BsPeople } from 'react-icons/bs'
 import { FiFile } from 'react-icons/fi'
 import { BiBookContent, BiServer, BiEnvelope } from 'react-icons/bi'
 
-
 function NavBar() {
     return (
         <>
@@ -18,20 +17,20 @@ function NavBar() {
                         <img src={ImgPetCondominio} alt="" className="img-fluid rounded-circle" />
                         <h1 className="text-light"><a href="index.html">BichanoVet</a></h1>
                         <div className="social-links mt-3 text-center">
-                            <a href="/" className="twitter"><i className="bx bxl-twitter"></i></a>
-                            <a href="/" className="facebook"><i className="bx bxl-facebook"></i></a>
-                            <a href="/" className="instagram"><i className="bx bxl-instagram"></i></a>
-                            <a href="/" className="google-plus"><i className="bx bxl-skype"></i></a>
-                            <a href="/" className="linkedin"><i className="bx bxl-linkedin"></i></a>
+                            <a href="/main" className="twitter"><i className="bx bxl-twitter"></i></a>
+                            <a href="/main" className="facebook"><i className="bx bxl-facebook"></i></a>
+                            <a href="/main" className="instagram"><i className="bx bxl-instagram"></i></a>
+                            <a href="/main" className="google-plus"><i className="bx bxl-skype"></i></a>
+                            <a href="/main" className="linkedin"><i className="bx bxl-linkedin"></i></a>
                         </div>
                     </div>
 
                     <nav className="nav-menu">
                         <ul>
-                            <li className="active"><a href="main"><AiOutlineHome /><span>Início</span></a></li>
+                            <li className="active"><a href="#hero"><AiOutlineHome /><span>Início</span></a></li>
                             <li><a href="#about"><BsPeople /><span>Sobre</span></a></li>
                             <li><a href="#resume"><FiFile /><span>Resumo</span></a></li>
-                            <li><a href="#portfolio"><BiBookContent />Area do Cliente</a></li>
+                            <li><a href="#portfolio"><BiBookContent />Área do Cliente</a></li>
                             <li><a href="#services"><BiServer />Serviços</a></li>
                             <li><a href="#contact"><BiEnvelope />Contato</a></li>
                         </ul>
